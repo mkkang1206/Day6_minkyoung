@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/content01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일정"
+        android:textSize="16sp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/content02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/content01"
+        android:layout_alignBaseline="@id/content01"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간"
+        android:layout_below="@+id/content01"
+        android:textSize="16sp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/time02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/time01"
+        android:layout_alignBaseline="@id/time01"></EditText>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:onClick="onButton1Clicked" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+            android:onClick="onButton2Clicked" />
+    </LinearLayout>
+
+</RelativeLayout>
